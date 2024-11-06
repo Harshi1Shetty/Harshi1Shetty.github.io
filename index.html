@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audumber Housing Society</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gallery-container {
+            scrollbar-width: thin;
+            scrollbar-color: #4B5563 #F3F4F6;
+        }
+        
+        .gallery-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .gallery-container::-webkit-scrollbar-track {
+            background: #F3F4F6;
+        }
+        
+        .gallery-container::-webkit-scrollbar-thumb {
+            background-color: #4B5563;
+            border-radius: 4px;
+        }
+
+        .member-card:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s ease;
+        }
+
+        @media (max-width: 640px) {
+            .responsive-table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center font-serif">Audumber</h1>
+            <p class="text-center mt-2 text-blue-100">Audumber Housing Society</p>
+        </div>
+    </header>
+
+    <!-- Main Image -->
+    <div class="container mx-auto px-4 mt-8">
+        <div class="rounded-lg overflow-hidden shadow-xl">
+            <img src="/api/placeholder/1200/600" alt="Sunshine Heights Building" class="w-full h-auto object-cover">
+        </div>
+    </div>
+
+    <!-- Image Gallery -->
+    <section class="container mx-auto px-4 mt-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Floor Plans & Layout</h2>
+        <div class="gallery-container flex space-x-4 overflow-x-auto pb-4">
+            <img src="/api/placeholder/400/300" alt="Floor Plan 1" class="rounded-lg shadow-md">
+            <img src="/api/placeholder/400/300" alt="Floor Plan 2" class="rounded-lg shadow-md">
+            <img src="/api/placeholder/400/300" alt="Floor Plan 3" class="rounded-lg shadow-md">
+            <img src="/api/placeholder/400/300" alt="Floor Plan 4" class="rounded-lg shadow-md">
+            <img src="/api/placeholder/400/300" alt="Floor Plan 5" class="rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <!-- Society Members -->
+    <section class="container mx-auto px-4 mt-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Society Members</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="member-card bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-gray-800">Mr. Rajesh Sharma</h3>
+                <p class="text-gray-600">Chairman</p>
+            </div>
+            <div class="member-card bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-gray-800">Mrs. Priya Patel</h3>
+                <p class="text-gray-600">Secretary</p>
+            </div>
+            <div class="member-card bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold text-gray-800">Mr. Suresh Kumar</h3>
+                <p class="text-gray-600">Treasurer</p>
+            </div>
+            <!-- Add more member cards as needed -->
+        </div>
+    </section>
+
+    <!-- Land Distribution Table -->
+    <section class="container mx-auto px-4 mt-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Land Distribution</h2>
+        <div class="responsive-table">
+            <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
+                <thead class="bg-gray-800 text-white">
+                    <tr>
+                        <th class="py-3 px-4 text-left">Member Name</th>
+                        <th class="py-3 px-4 text-left">Current Area (sq ft)</th>
+                        <th class="py-3 px-4 text-left">Post-Development Area (sq ft)</th>
+                        <th class="py-3 px-4 text-left">Percentage Increase</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4">Rajesh Sharma</td>
+                        <td class="py-3 px-4">800</td>
+                        <td class="py-3 px-4">1200</td>
+                        <td class="py-3 px-4">50%</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4">Priya Patel</td>
+                        <td class="py-3 px-4">750</td>
+                        <td class="py-3 px-4">1150</td>
+                        <td class="py-3 px-4">53%</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- QR Codes -->
+    <section class="container mx-auto px-4 mt-12 mb-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Quick Links</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="/api/placeholder/200/200" alt="WhatsApp QR Code" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold text-gray-800">WhatsApp Updates</h3>
+                <p class="text-gray-600 mt-2">Scan to join our WhatsApp broadcast channel</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="/api/placeholder/200/200" alt="Google Drive QR Code" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Document Repository</h3>
+                <p class="text-gray-600 mt-2">Access important society documents</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 Audumber Housing Society. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Contact us: info@audumber.com</p>
+        </div>
+    </footer>
+</body>
+</html>
