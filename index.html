@@ -1,145 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audumber Housing Society</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <style>
-        .gallery-container {
-            scrollbar-width: thin;
-            scrollbar-color: #4B5563 #F3F4F6;
-        }
-        
-        .gallery-container::-webkit-scrollbar {
-            height: 8px;
-        }
-        
-        .gallery-container::-webkit-scrollbar-track {
-            background: #F3F4F6;
-        }
-        
-        .gallery-container::-webkit-scrollbar-thumb {
-            background-color: #4B5563;
-            border-radius: 4px;
-        }
-
-        .member-card:hover {
-            transform: translateY(-2px);
-            transition: transform 0.2s ease;
-        }
-
-        @media (max-width: 640px) {
-            .responsive-table {
-                display: block;
-                width: 100%;
-                overflow-x: auto;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshil Shetty | Portfolio</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 shadow-lg">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-bold text-center font-serif">Audumber</h1>
-            <p class="text-center mt-2 text-blue-100">Audumber Housing Society</p>
-        </div>
-    </header>
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- Main Image -->
-    <div class="container mx-auto px-4 mt-8">
-        <div class="rounded-lg overflow-hidden shadow-xl">
-            <img src="/api/placeholder/1200/600" alt="Sunshine Heights Building" class="w-full h-auto object-cover">
-        </div>
+  <!-- Navigation Bar -->
+  <header class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white fixed w-full z-50 shadow-lg">
+    <nav class="flex justify-between items-center py-4 px-8">
+      <h1 class="text-2xl font-bold">Harshil Shetty</h1>
+      <ul class="flex gap-6">
+        <li><a href="#home" class="hover:text-gray-200">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-200">About Me</a></li>
+        <li><a href="#experience" class="hover:text-gray-200">Experience</a></li>
+        <li><a href="#education" class="hover:text-gray-200">Education</a></li>
+        <li><a href="#projects" class="hover:text-gray-200">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-cover bg-center bg-fixed" 
+         style="background-image: url('images/bacground.webp'); 
+                background-size: cover; 
+                background-position: center; 
+                height: calc(100vh -80px); /* Adjusts height to account for the downward shift */ 
+                width: 100%; 
+                padding-top: 60px;"> <!-- Adds padding to shift content down -->
+    <h1 class="text-5xl font-bold text-white mb-4">Harshil Shetty</h1>
+    <p class="text-lg text-gray-200">AI/ML Enthusiast | Cybersecurity Expert | Innovator</p>
+    <a href="#about" class="mt-6 bg-indigo-500 px-6 py-2 text-white rounded-full shadow-lg hover:bg-indigo-600 transition">Learn More</a>
+</section>
+
+  <!-- About Me Section -->
+  <!-- About Me Section -->
+<section id="about" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-8">
+    <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      
+      <!-- About Content -->
+      <p class="text-gray-700">
+        I am a tech-driven individual passionate about Artificial Intelligence, Machine Learning, Cybersecurity, and IoT.
+        My focus is on developing innovative AI/ML technologies to solve real-world problems while exploring other emerging fields.
+      </p>
+      
+      <!-- Skills Section -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Skills</h3>
+        
+        <!-- Languages -->
+        <h4 class="text-lg font-medium mb-2">Programming Languages</h4>
+        <ul class="flex flex-wrap gap-2">
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Python</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">C</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Java</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">JavaScript</li>
+        </ul>
+        
+        <!-- Frameworks and Libraries -->
+        <h4 class="text-lg font-medium mt-4 mb-2">Frameworks & Libraries</h4>
+        <ul class="flex flex-wrap gap-2">
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">ReactJS</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">ExpressJS</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">TensorFlow</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">PyTorch</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Qiskit</li>
+        </ul>
+        
+        <!-- Tools -->
+        <h4 class="text-lg font-medium mt-4 mb-2">DevOps & Tools</h4>
+        <ul class="flex flex-wrap gap-2">
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Git/GitHub</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Postman</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Flask</li>
+        </ul>
+        
+        <!-- Hardware -->
+        <h4 class="text-lg font-medium mt-4 mb-2">Electronics & Hardware</h4>
+        <ul class="flex flex-wrap gap-2">
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Arduino</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">ESP32</li>
+          <li class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded">Raspberry Pi</li>
+        </ul>
+      </div>
+      
     </div>
+  </div>
+</section>
 
-    <!-- Image Gallery -->
-    <section class="container mx-auto px-4 mt-12">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Floor Plans & Layout</h2>
-        <div class="gallery-container flex space-x-4 overflow-x-auto pb-4">
-            <img src="/api/placeholder/400/300" alt="Floor Plan 1" class="rounded-lg shadow-md">
-            <img src="/api/placeholder/400/300" alt="Floor Plan 2" class="rounded-lg shadow-md">
-            <img src="/api/placeholder/400/300" alt="Floor Plan 3" class="rounded-lg shadow-md">
-            <img src="/api/placeholder/400/300" alt="Floor Plan 4" class="rounded-lg shadow-md">
-            <img src="/api/placeholder/400/300" alt="Floor Plan 5" class="rounded-lg shadow-md">
-        </div>
-    </section>
 
-    <!-- Society Members -->
-    <section class="container mx-auto px-4 mt-12">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Society Members</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="member-card bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold text-gray-800">Mr. Rajesh Sharma</h3>
-                <p class="text-gray-600">Chairman</p>
-            </div>
-            <div class="member-card bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold text-gray-800">Mrs. Priya Patel</h3>
-                <p class="text-gray-600">Secretary</p>
-            </div>
-            <div class="member-card bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold text-gray-800">Mr. Suresh Kumar</h3>
-                <p class="text-gray-600">Treasurer</p>
-            </div>
-            <!-- Add more member cards as needed -->
+  <!-- Experience Section -->
+  <section id="experience" class="py-16 bg-white">
+    <div class="container mx-auto px-8">
+      <h2 class="text-3xl font-bold text-center mb-6">Experience</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Front-End Developer</h3>
+          <p class="text-gray-600">Capture The Flag Competition, College</p>
+          <p class="text-gray-500 mt-2">Assisted in front-end development for a CTF event.</p>
         </div>
-    </section>
+        <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">App Development Intern</h3>
+          <p class="text-gray-600">April Innovations</p>
+          <p class="text-gray-550">June 2024-August 2024</p>
+          <p class="text-gray-500 mt-2">Created and modified modules for Android pentesting.</p>
+        </div>
+        <div class="p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Quantum Scripts</h3>
+          <p class="text-gray-600">CybraneX</p>
+          <p class="text-gray-550">November 2024-Present</p>
+          <p class="text-gray-500 mt-2">Creating projects related to Quantum Computing and Quantitative Finance</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Land Distribution Table -->
-    <section class="container mx-auto px-4 mt-12">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Land Distribution</h2>
-        <div class="responsive-table">
-            <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">
-                <thead class="bg-gray-800 text-white">
-                    <tr>
-                        <th class="py-3 px-4 text-left">Member Name</th>
-                        <th class="py-3 px-4 text-left">Current Area (sq ft)</th>
-                        <th class="py-3 px-4 text-left">Post-Development Area (sq ft)</th>
-                        <th class="py-3 px-4 text-left">Percentage Increase</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="hover:bg-gray-50">
-                        <td class="py-3 px-4">Rajesh Sharma</td>
-                        <td class="py-3 px-4">800</td>
-                        <td class="py-3 px-4">1200</td>
-                        <td class="py-3 px-4">50%</td>
-                    </tr>
-                    <tr class="hover:bg-gray-50">
-                        <td class="py-3 px-4">Priya Patel</td>
-                        <td class="py-3 px-4">750</td>
-                        <td class="py-3 px-4">1150</td>
-                        <td class="py-3 px-4">53%</td>
-                    </tr>
-                    <!-- Add more rows as needed -->
-                </tbody>
-            </table>
+  <!-- Education Section -->
+  <section id="education" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-8">
+      <h2 class="text-3xl font-bold text-center mb-6">Education</h2>
+      <div class="timeline">
+        <div class="relative flex items-center">
+          <div class="bg-indigo-500 w-3 h-3 rounded-full"></div>
+          <div class="ml-4">
+            <h3 class="text-lg font-semibold">Shah and Anchor Kutchhi Engineering College</h3>
+            <p class="text-gray-600">B.Tech in Electronics and Computer Science</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- QR Codes -->
-    <section class="container mx-auto px-4 mt-12 mb-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Quick Links</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <img src="/api/placeholder/200/200" alt="WhatsApp QR Code" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-800">WhatsApp Updates</h3>
-                <p class="text-gray-600 mt-2">Scan to join our WhatsApp broadcast channel</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <img src="/api/placeholder/200/200" alt="Google Drive QR Code" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-800">Document Repository</h3>
-                <p class="text-gray-600 mt-2">Access important society documents</p>
-            </div>
-        </div>
-    </section>
+  <!-- Projects Section -->
+<section id="projects" class="py-16 bg-white">
+  <div class="container mx-auto px-8">
+    <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Project 1 -->
+      <div class="bg-gray-50 rounded-lg p-4 shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold">Hand Movement Recognition and Control System</h3>
+        <p class="text-gray-500 mt-2">Developed Python scripts to control a bionic hand by capturing hand movement data.</p>
+        <ul class="text-sm text-gray-700 mt-2">
+          <li>• Technologies: Python, MongoDB, Arduino</li>
+          <li>• Features: Real-time movement sync, wireless cloud data transfer</li>
+        </ul>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="bg-gray-50 rounded-lg p-4 shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold">Script for Dynamic Vulnerability Analysis</h3>
+        <p class="text-gray-500 mt-2">Created scripts to analyze vulnerabilities in Android packages.</p>
+        <ul class="text-sm text-gray-700 mt-2">
+          <li>• Technologies: Java, Python</li>
+          <li>• Features: Dynamic analysis, vulnerability reporting</li>
+        </ul>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="bg-gray-50 rounded-lg p-4 shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold">Secure Cloud Text Transfer</h3>
+        <p class="text-gray-500 mt-2">Built a secure text transfer system with end-to-end encryption.</p>
+        <ul class="text-sm text-gray-700 mt-2">
+          <li>• Technologies: MERN Stack, RSA Encryption</li>
+          <li>• Features: Secure communication, React frontend</li>
+        </ul>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="bg-gray-50 rounded-lg p-4 shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold">Basket Options Payoff Prediction</h3>
+        <p class="text-gray-500 mt-2">Implemented Quantum Monte Carlo algorithms for payoff predictions.</p>
+        <ul class="text-sm text-gray-700 mt-2">
+          <li>• Technologies: Quantum Monte Carlo, Python</li>
+          <li>• Features: Strike price predictions, real-time calculations</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <p>© 2024 Audumber Housing Society. All rights reserved.</p>
-            <p class="mt-2 text-gray-400">Contact us: info@audumber.com</p>
-        </div>
-    </footer>
+
+  <!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-8">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+    <div class="flex justify-center gap-8 mt-8">
+
+      <!-- Email -->
+      <a href="mailto:harshil.p.shetty@gmail.com" target="_blank" class="hover:opacity-75">
+        <img src="https://img.icons8.com/ios-filled/50/4a90e2/email.png" alt="Email" title="Email Me">
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/harshil-shetty-372a47240/" target="_blank" class="hover:opacity-75">
+        <img src="https://img.icons8.com/ios-filled/50/4a90e2/linkedin-circled.png" alt="LinkedIn" title="Visit LinkedIn">
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Harshi1Shetty" target="_blank" class="hover:opacity-75">
+        <img src="https://img.icons8.com/ios-filled/50/4a90e2/github.png" alt="GitHub" title="Visit GitHub">
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
 </body>
 </html>
